@@ -2,7 +2,7 @@ name: shell commands
 
 on : [pull, push]
 
-runs-on: ununtu-latest
+runs-on: ubuntu-latest
   jobs:
     - name: execute shell commands
       run: echo "hello Worlds"
