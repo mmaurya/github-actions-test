@@ -2,13 +2,13 @@ name: shell commands
 
 on : [pull, push]
 
-  jobs:
-    run-shell-commands:
-      runs-on: ubuntu-latest
-      steps:
-        - name: execute shell commands
-          run: echo "hello Worlds"
-        - name: multiline strings
-          run: |
-            node -v
-            npm -v
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execute shell commands
+        run: echo "hello Worlds"
+      - name: multiline string
+        run: |
+          node -v
+          npm -v
