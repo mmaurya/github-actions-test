@@ -13,3 +13,13 @@ jobs:
           who-to-greet: 'Mayank Maurya' 
       - name: Log time of the action
         run: echo "${{ steps.greet.outputs.time }}"
+      - name: list contents before checkout
+        run: |
+          pwd
+          ls -ltra
+      - name: checkout code from github
+        uses: actions/checkout@v1
+      - name: list contents after checkout
+        run: |
+          pwd
+          ls -ltra
